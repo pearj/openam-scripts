@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       OpenAM keyboard shortcuts
 // @namespace  OpenamKeyboardShortcuts
-// @version    0.8.1
+// @version    0.9.0
 // @description  OpenAM keyboard shortcuts
 // @match      http://*/opensso/*
 // @match      https://*/opensso/*
