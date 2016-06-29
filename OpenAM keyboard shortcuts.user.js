@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       OpenAM keyboard shortcuts
 // @namespace  OpenamKeyboardShortcuts
-// @version    0.9.0
+// @version    0.9.1
 // @description  OpenAM keyboard shortcuts
 // @match      http://*/opensso/*
 // @match      https://*/opensso/*
@@ -129,7 +129,7 @@ function followNavigationPath(path) {
 }
 
 $(function() {
-    var navigation = GM_getValue('navigation');
+    var navigation = GM_getValue('navigation', null);
     if (navigation !== null) {
         console.log(navigation);
         var path = JSON.parse(navigation);
@@ -189,7 +189,7 @@ $(function() {
             autocompleteDialog("Choose an OpenAM button", "Button: ", buttons);
         };
         Mousetrap.bind('b', buttonBind);   
-        Mousetrap.bindGlobal('ctrl+alt+b', buttonBind);   
+        Mousetrap.bindGlobal('alt+b', buttonBind);   
         
     }
     
